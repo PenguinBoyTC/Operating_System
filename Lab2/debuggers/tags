@@ -1,0 +1,22 @@
+.PHONY	Makefile	/^.PHONY: clean test$/
+Mbugs	bugs.c	/^int main(int argc, char** argv) {$/
+Mvalgrind_test	valgrind_test.c	/^int main() {$/
+STUDENT_ID	Makefile	/^STUDENT_ID=XXXXXXX$/
+Storage	bugs.c	35
+all	Makefile	/^all: bugs valgrind_test$/
+bugs	Makefile	/^bugs: bugs.c$/
+clean	Makefile	/^clean:$/
+colorful_bug	bugs.c	39
+echo	bugs.c	/^void echo(char** strs) {$/
+echoohce	bugs.c	/^void echoohce(char** strs) {$/
+num_bugs_on_earth	bugs.c	40
+num_bugs_on_mars	bugs.c	36
+num_bugs_on_venus	bugs.c	41
+possibly_lost	valgrind_test.c	15
+scary_bug	bugs.c	37
+sentence	bugs.c	38
+still_reachable	valgrind_test.c	14
+tar	Makefile	/^tar: clean$/
+test	Makefile	/^test: bugs$/
+useless_bug	bugs.c	42
+valgrind_test	Makefile	/^valgrind_test: valgrind_test.c$/

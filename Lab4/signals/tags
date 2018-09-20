@@ -1,0 +1,19 @@
+.PHONY	Makefile	/^.PHONY: clean zip$/
+CFILELIST	Makefile	/^CFILELIST = signals.c$/
+CTRL_C_THRESHOLD	signals.c	9
+Msignals	signals.c	/^int main(int argc, char* argv[])$/
+RAWC	Makefile	/^RAWC = $(patsubst %.c,%,$(addprefix $(SRCDIR), $(C/
+SRCDIR	Makefile	/^SRCDIR = .\/$/
+STUDENT_ID	Makefile	/^STUDENT_ID=2826945$/
+STUDENT_ID	Makefile~	1
+all	Makefile	/^all: signals$/
+catch_int	signals.c	/^void catch_int(int sig_num)$/
+catch_tstp	signals.c	/^void catch_tstp(int sig_num)$/
+clean	Makefile	/^clean:$/
+ctrl_c_count	signals.c	7
+far	signals	20
+got_response	signals.c	8
+signal_tester	Makefile	/^signal_tester: signal_tester.c$/
+signals	Makefile	/^signals: signals.c$/
+test	Makefile	/^test: all$/
+zip	Makefile	/^zip: clean$/
